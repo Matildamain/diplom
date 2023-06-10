@@ -2,4 +2,98 @@
   width: 100%;
 }
 
+body {
+  flex-direction: column;
+}
+
+#app {
+  width: 100%;
+}
+
+body {
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.BodyM {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.BodyL {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.BodySmall {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.CaptionM {
+  font-weight: 500;
+  font-weight: 16px;
+}
+
+.CaptionL {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.content {
+  flex: 1;
+}
+
+.bottom-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #8b8b8b;
+}
+.bottom-menu a {
+  text-decoration: none;
+}
+.bottom-menu a .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  gap: 13px;
+}
+.bottom-menu a .button.active h5 {
+  color: #a93dff;
+}
+.bottom-menu a .button.active svg {
+  fill: #a93dff;
+  stroke: #a93dff;
+}
+.bottom-menu a .button h5 {
+  color: #8b8b8b;
+}
+
 /*# sourceMappingURL=style.css.map */

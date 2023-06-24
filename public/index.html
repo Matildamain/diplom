@@ -8,20 +8,158 @@
     <title>Диплом</title>
   </head>
   <body>
-    <div id="app"></div>
-
-    <div id="app"></div>
+    <div id="app">
+      <div class="container">
+        <form action="/index" method="get">
+          <input type="text" name="query" placeholder="Поиск">
+          <button type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="7" stroke="#333333" stroke-width="2"/>
+            <path d="M20 20L17 17" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </button>
+        </form>
+      </div>
+    </div>
+<div class="cards">
+<h4>Цена</h4>
+<div class="sort" style="margin: 0 0 0 10px;">
+  <select id="sortSelect" class="btn orange sort-select" onchange="sortCards(order)">
+    <option value="default">По умолчанию</option>
+    <option value="DOWN">По убыванию</option>
+    <option value="UP">По возрастанию</option>
+  </select>
+</div>
+</div>
     <div class="content">
-      
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">30 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" >В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">90 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">20 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="description-block">
+        <p class="product-description">Рекорд-лейбл для молодых и талантливых музыкантов</p>
+        </div>
+        <div class="price-block">
+          <p class="product-price">50 000₸</p>
+          <button class="add-to-cart" onclick="addToCart(event)">В корзину</button>
+        </div>
+      </div>
+
     </div>
     <div class="bottom-menu">
       <a href="#">
-        <div class="button active">
+        <div class="icon">
           <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            fill="#333333"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -40,12 +178,12 @@
         </div>
       </a>
       <a href="#">
-        <div class="button active">
+        <div class="icon">
           <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            fill="#333333"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -57,8 +195,8 @@
           <h5>Заказы</h5>
         </div>
       </a>
-      <a href="#">
-        <div class="button active">
+      <a href="./basket.html">
+        <div class="icon">
           <svg
             width="24"
             height="24"
@@ -83,7 +221,7 @@
         </div>
       </a>
       <a href="#">
-        <div class="button active">
+        <div class="icon">
           <svg
             width="24"
             height="24"
@@ -102,9 +240,7 @@
       </a>
     </div>
     <script src="bundle.js" type="module"></script>
-  </body>
-</html>
 
-    <script src="bundle.js" type="module"></script>
+
   </body>
 </html>

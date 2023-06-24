@@ -6,14 +6,6 @@ body {
   flex-direction: column;
 }
 
-#app {
-  width: 100%;
-}
-
-body {
-  flex-direction: column;
-}
-
 @import 'basis';
 
 .content {
@@ -24,31 +16,169 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 10px 0;
-  border-top: 1px solid $stroke-dark;
+  border-top: 1px solid $stroke-light;
   a{
     text-decoration: none;
-    .button{
+    color: $Stroke-secondary;
+    &:hover {
+      color: $inverce;
+      svg {
+        fill: $inverce;
+        stroke: $inverce;
+
+      }
+      }
+    }
+  }
+
+    .icon{
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 0 20px;
       gap: 13px;
-      &.active{
-        h5{
-          color: $inverce;
+
+    }
+        .container {
+        display: flex;
+        align-items: center;
+        border: 1px solid $stroke-light;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 1% 1% 0 1%;
+      }
+      
+      form {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        margin-right: 5px;
+      }
+      
+      input[type="text"] {
+        border: none;
+        outline: none;
+        flex-grow: 1;
+      }
+      
+      button[type="submit"] {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+      }
+      svg {
+        width: 20px;   
+        height: 20px;
+        stroke-width: 2;
+        margin-left: 5px;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2%;
+        justify-content: center;
+      }
+
+      .product-card {
+        margin: 1% 10% 0 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .description-block {
+        width: 100%;
+        background-color: $Main;
+        text-align: center;
+     p{
+      font-weight: 300;
+      font-size: 16px;
+      color: $light;
+      margin: 5px 5px 5px 5px;
+     }     
+     }
+
+      .price-block {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .add-to-cart {
+       
+        background-color: white;
+        border: 1px solid $Main;
+        border-radius: 5px;
+        color: $Main;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background-color: $Main;
+          color: $light;
         }
-        svg{
-          fill: $inverce;
-          stroke: $inverce;
+      
+        &:active {
+          background-color: $light;
+          color: $Main;
         }
       }
-      h5{
-        color: $stroke-dark;
+      
+
+      
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: auto;
+        max-height: calc(100vh - 100px);
+      }
+      
+      .product-card {
+        flex: 0 0 calc(35% - 200px); 
+        margin: 10px;
+      }
+      
+     .cards {
+      display: flex;
+      width: 47%;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0px 0 0 10px;
+      height: 5%;
+     }
+
+
+    .sort {
+      display: flex;
+      align-items: center;
+      select {
+        margin-right: 10px;
+        appearance: none;
+        padding: 8px 30px 8px 10px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: transparent;
+        background-image: none;
+        cursor: pointer;
+        
       }
     }
-  }
 
-}
-
+    .cart-item {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+     
+     
+    }
+    
